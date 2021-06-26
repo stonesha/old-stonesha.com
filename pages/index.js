@@ -32,7 +32,7 @@ export default function Home() {
           <FunctionCard
           key={"bee-mobile"}
           title={"Bee Mobile"}
-          slug={"https://github.com/stonesha/bee-mobile"}
+          link={"https://github.com/stonesha/bee-mobile"}
           logo={"flutter.png"}
           description={"Mobile Application for Bettering Emergency Evacuations (BEE)"}
           >
@@ -41,7 +41,7 @@ export default function Home() {
           <FunctionCard
           key={"bee-webserver"}
           title={"Bee Webserver"}
-          slug={"https://github.com/stonesha/bee-webserver"}
+          link={"https://github.com/stonesha/bee-webserver"}
           logo={"java.png"}
           description={"Backend Server for Bettering Emergency Evacuations (BEE)"}
           >
@@ -50,7 +50,7 @@ export default function Home() {
           <FunctionCard
           key={"bee-project"}
           title={"Bee Project"}
-          slug={"https://github.com/stonesha/bee-project"}
+          link={"https://github.com/stonesha/bee-project"}
           logo={"react.png"}
           description={"Web Application for Bettering Emergency Evacuations (BEE)"}
           >
@@ -59,7 +59,7 @@ export default function Home() {
           <FunctionCard
           key={"blackjack"}
           title={"Blackjack"}
-          slug={"https://github.com/stonesha/blackjack"}
+          link={"https://github.com/stonesha/blackjack"}
           logo={"python.png"}
           description={"Blackjack written in Python with unit testing and DevOps"}
           >
@@ -68,7 +68,7 @@ export default function Home() {
           <FunctionCard
           key={"pong-clone"}
           title={"Pong Clone"}
-          slug={"https://github.com/stonesha/pong-clone"}
+          link={"https://github.com/stonesha/pong-clone"}
           logo={"cpp.png"}
           description={"Pong clone written using SFML and C++"}
           >
