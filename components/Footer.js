@@ -24,8 +24,8 @@ export default function Footer() {
         </div>
         <div className="flex flex-col space-y-4">
           <ExternalLink href="https://github.com/stonesha">GitHub</ExternalLink>
-          <ExternalLink href="https://www.youtube.com/channel/UCjDa15R2mPjIgpSl_zZnoxg">
-            YouTube
+          <ExternalLink href="https://www.linkedin.com/in/stone-sha-2a8040147/">
+            LinkedIn
           </ExternalLink>
         </div>
         <div className="flex flex-col space-y-4">

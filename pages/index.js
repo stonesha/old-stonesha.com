@@ -10,9 +10,10 @@ export default function Home() {
           Hey, I’m Stone Sha (WIP)
         </h1>
         <h2 className="prose text-gray-600 dark:text-gray-400 mb-16">
-          I'm a developer, guitar player, and video game player. I use this website personally to
-          keep organized about the things I'm passionate about. Feel free to keep scrolling or browse
-          and stay a while.
+          I'm a developer, guitar player, and video game enthusiast. I use this website personally to
+          keep organized about the things I'm passionate about. Feel free to&nbsp;
+            <a href={`https://www.linkedin.com/in/stone-sha-2a8040147/`} target="_blank" rel="noopener noreferrer">connect on LinkedIn</a>,&nbsp;
+            <a  href={`https://github.com/stonesha`} target="_blank" rel="noopener noreferrer">check my GitHub</a>, or stay and browse.
         </h2>
 
         <h1 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
