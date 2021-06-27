@@ -1,6 +1,6 @@
 
 import Container from '@/components/Container';
-import FunctionCard from '@/components/FunctionCard';
+import ProjectCard from '@/components/ProjectCard';
 
 export default function Home() {
   return (
@@ -21,59 +21,59 @@ export default function Home() {
         </h1>
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full mt-4">
 
-          <FunctionCard
+          <ProjectCard
           key={"monke"}
           title={"Monke Bot"}
           link={"https://github.com/stonesha/monke-bot"}
           logo={"python.png"}
           description={"Discord Bot that sends funny message and can identify images."}
           >
-          </FunctionCard>
+          </ProjectCard>
 
-          <FunctionCard
+          <ProjectCard
           key={"bee-mobile"}
           title={"Bee Mobile"}
           link={"https://github.com/stonesha/bee-mobile"}
           logo={"flutter.png"}
           description={"Mobile Application for Bettering Emergency Evacuations (BEE)"}
           >
-          </FunctionCard>
+          </ProjectCard>
 
-          <FunctionCard
+          <ProjectCard
           key={"bee-webserver"}
           title={"Bee Webserver"}
           link={"https://github.com/stonesha/bee-webserver"}
           logo={"java.png"}
           description={"Backend Server for Bettering Emergency Evacuations (BEE)"}
           >
-          </FunctionCard>
+          </ProjectCard>
 
-          <FunctionCard
+          <ProjectCard
           key={"bee-project"}
           title={"Bee Project"}
           link={"https://github.com/stonesha/bee-project"}
           logo={"react.png"}
           description={"Web Application for Bettering Emergency Evacuations (BEE)"}
           >
-          </FunctionCard>
+          </ProjectCard>
 
-          <FunctionCard
+          <ProjectCard
           key={"blackjack"}
           title={"Blackjack"}
           link={"https://github.com/stonesha/blackjack"}
           logo={"python.png"}
           description={"Blackjack written in Python with unit testing and DevOps"}
           >
-          </FunctionCard>
+          </ProjectCard>
 
-          <FunctionCard
+          <ProjectCard
           key={"pong-clone"}
           title={"Pong Clone"}
           link={"https://github.com/stonesha/pong-clone"}
           logo={"cpp.png"}
           description={"Pong clone written using SFML and C++"}
           >
-          </FunctionCard>
+          </ProjectCard>
 
         </div>
       </div>

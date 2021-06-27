@@ -44,7 +44,6 @@ export default function Container(props) {
             }}
           />
         <title>{meta.title}</title>
-        <meta charset="UTF-8" />
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
         <meta name="keywords" content="Stone Sha, Stone, Sha, Portfolio, HTML, CSS, JavaScript, PHP, Python, React, Next.js, C++, CPP, C, Web Developer, web" />

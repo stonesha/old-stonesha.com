@@ -1,7 +1,6 @@
-import Link from 'next/link';
 import Image from 'next/image';
 
-export default function FunctionCard({
+export default function ProjectCard({
   title,
   description,
   link,
