@@ -27,8 +27,12 @@ export default function Container(props) {
     <div className="bg-white dark:bg-black">
       <Head>
         <title>{meta.title}</title>
+        <meta charset="UTF-8" />
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
+        <meta name="keywords" content="Stone Sha, Stone, Sha, Portfolio, HTML, CSS, JavaScript, PHP, Python, React, Next.js, C++, CPP, C, Web Developer, web" />
+        <meta name="author" content="Stone Sha" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:url" content={`https://stonesha.com${router.asPath}`} />
         <link rel="canonical" href={`https://stonesha.com${router.asPath}`} />
         <meta property="og:type" content={meta.type} />
