@@ -8,3 +8,5 @@ Planned Features:
 - [ ] "Now Playing" - Spotify API
 - [ ] "Top Played" - Spotify API
 - [ ] Audio/Music Visualizer for Spotify API
+- [ ] Manga Section for keeping up-to-date
+- [ ] Cat related social media post aggregated auto populated scroller
