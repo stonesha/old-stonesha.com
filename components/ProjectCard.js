@@ -9,7 +9,7 @@ export default function ProjectCard({
 }) {
   return (
       <a
-        className="border border-grey-200 dark:border-gray-900 rounded p-4 w-full" href={`${link}`} target="_blank" rel="noopener noreferrer"
+        className="transition-height ease-in-out hover:-translate-y-1 hover:scale-105 border border-grey-200 dark:border-gray-900 rounded p-4 w-full" href={`${link}`} target="_blank" rel="noopener noreferrer"
         {...rest}
       >
         <Image

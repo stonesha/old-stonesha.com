@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         'blue-opaque': 'rgb(13 42 148 / 18%)'
       },
+      transitionProperty: {
+        'height': 'height'
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
