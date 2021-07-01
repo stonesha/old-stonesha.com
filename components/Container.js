@@ -17,8 +17,8 @@ export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: 'Stone Sha - Web Developer (WIP)',
-    description: `Web developer, musician, and ideo-game enthusiast,`,
+    title: 'Stone Sha - Web Developer',
+    description: `Web developer, musician, and video-game enthusiast,`,
     image: '/favicon.ico',
     type: 'website',
     ...customMeta
