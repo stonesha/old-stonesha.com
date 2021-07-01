@@ -5,6 +5,7 @@ import { useTheme } from 'next-themes';
 import NextLink from 'next/link';
 
 import Footer from '@/components/Footer';
+import NowPlaying from '@/components/NowPlaying';
 
 export default function Container(props) {
   const [mounted, setMounted] = useState(false);
@@ -93,6 +94,7 @@ export default function Container(props) {
             </svg>
           )}
         </button>
+        <NowPlaying />
         <div>
           <NextLink href="/">
             <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100">Home</a>
