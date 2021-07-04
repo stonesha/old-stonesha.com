@@ -1,4 +1,4 @@
-import { getMangaInfo } from '@/lib/manganelo';
+import { getMangaInfo } from '@/lib/manganato';
 
 export default async function handler ({ query: { tag } }, res){
 

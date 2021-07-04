@@ -9,5 +9,6 @@ Planned Features:
 - [x] "Top Played" - Spotify API
 - [ ] Add album covers to "Top Played"
 - [ ] Audio/Music Visualizer for Spotify API
-- [ ] Manga Section for keeping up-to-date
+- [x] Created mini API for fetching manga data from manganato
+- [ ] Create visual manga cards to display information
 - [ ] Cat related social media post aggregated auto populated scroller
