@@ -16,13 +16,14 @@ export default function Track(track) {
             >
               {track.title}
             </a>
-            {track.artists.map((artist) => 
+            {track.artists.map((artist, key) => 
               <a
                 className="text-gray-500 truncate w-60 sm:w-96 md:w-48"
                 color="gray.500"
                 href={artist.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                key={key.toString()}
               >
                 {artist.name}
               </a>
