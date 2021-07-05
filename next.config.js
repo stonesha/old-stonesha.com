@@ -6,6 +6,7 @@ module.exports = {
     images: {
       domains: [
         'i.scdn.co', // Spotify Album Art
+        'avt.mkklcdnv6temp.com' // manganato manga covers
       ]
     },
     async headers() {
