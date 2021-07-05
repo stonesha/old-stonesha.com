@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <Container>
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
-        <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-          Hey, I’m Stone Sha
+        <h1 className="font-normal text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
+          Hi, I'm Stone Sha
         </h1>
         <h2 className="prose text-gray-600 dark:text-gray-400 mb-16">
           I'm a developer, guitar player, and video game enthusiast. I use this website personally to
@@ -17,7 +17,7 @@ export default function Home() {
             <a  href={"https://github.com/stonesha"} target="_blank" rel="noopener noreferrer">check my GitHub</a>, or stay and browse.
         </h2>
 
-        <h1 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
+        <h1 className="font-medium text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
           Projects
         </h1>
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full mt-4">
@@ -78,7 +78,7 @@ export default function Home() {
         </div>
         <br/>
 
-        <h1 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
+        <h1 className="font-medium text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
           Top Tracks
         </h1>
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
