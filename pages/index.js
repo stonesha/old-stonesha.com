@@ -81,7 +81,7 @@ export default function Home() {
         <h1 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
           Top Tracks
         </h1>
-        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full mt-4">
+        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
           <TopTracks />
         </div>
 
