@@ -5,10 +5,15 @@ export default async function handler(_, res) {
   const { items } = await response.json();
 
   const tracks = items.slice(0, 10).map((track) => ({
-    artist: track.artists.map((_artist) => _artist.name).join(', '),
+    artists: track.artists.map((_artist) =>
+      ({
+        name: _artist.name,
+        url: _artist.external_urls.spotify
+      })),
     songUrl: track.external_urls.spotify,
     title: track.name,
-    albumImageUrl: track.album.images[0].url
+    albumImageUrl: track.album.images[0].url,
+    albumUrl: "https://open.spotify.com/album/" + track.album.id
   }));
 
   res.setHeader(
