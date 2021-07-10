@@ -5,9 +5,7 @@ import MangaCard from '@/components/MangaCard';
 
 export default function FollowedManga() {
 
-    const { data }  = useSWR('/api/get-manga-info/followed-manga', fetcher, { refreshInterval: 1000 });
-
-    console.log(data);
+    const { data }  = useSWR('/api/get-manga-info/followed-manga', fetcher);
 
     if (!data)
         return null;
