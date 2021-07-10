@@ -1,0 +1,7 @@
+{
+    "functions": {
+        "api/get-manga-info/followed-manga": {
+            "includeFiles": "data/mangas.txt"
+        }
+    }
+}
