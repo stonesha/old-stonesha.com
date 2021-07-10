@@ -21,6 +21,9 @@ export default function Footer() {
           <Link href="/">
             <a className="text-gray-500 hover:text-gray-600 transition">Home</a>
           </Link>
+          <Link href="/manga">
+            <a className="text-gray-500 hover:text-gray-600 transition">Manga</a>
+          </Link>
         </div>
         <div className="flex flex-col space-y-4">
           <ExternalLink href="https://github.com/stonesha">GitHub</ExternalLink>
