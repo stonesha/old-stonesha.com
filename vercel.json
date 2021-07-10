@@ -1,6 +1,6 @@
 {
     "functions": {
-        "api/get-manga-info/followed-manga": {
+        "api/get-manga-info/followed-manga.js": {
             "includeFiles": "data/mangas.txt"
         }
     }
