@@ -11,6 +11,7 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.4.1",
     "globby": "^11.0.4",
+    "html-react-parser": "^1.2.7",
     "next": "latest",
     "next-themes": "0.0.14",
     "node-html-parser": "^3.3.6",
@@ -19,6 +20,7 @@
     "querystring": "^0.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
     "swr": "^0.5.6"
   },
   "devDependencies": {

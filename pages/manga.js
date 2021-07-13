@@ -1,7 +1,18 @@
 import Container from "@/components/Container";
-import FollowedManga from '@/components/FollowedManga';
+import { getFollowedMangas } from "@/lib/manganato";
+import MangaCard from "@/components/MangaCard";
 
-export default function Manga() {
+export async function getStaticProps() {
+    const mangaList = getFollowedMangas();
+
+    return {
+        props: {
+            mangaList,
+        },
+    }
+}
+
+export default function Manga({ mangaList }) {
 
     return (
         <Container
@@ -17,8 +28,8 @@ export default function Manga() {
                     This page is mainly for personal use as I coded an API to help me keep track of the
                     works I love. Feel free to stay and browse.
                 </p>
-                <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full mt-4">
-                    <FollowedManga/>
+                <div className="grid gap-4 grid-cols-1 sm:grid-cols-1 my-2 w-full mt-4">
+                    {mangaList.map((mangaTag, index) => <MangaCard key={index} tag={mangaTag} />)}
                 </div>
             </div>
         </Container>
