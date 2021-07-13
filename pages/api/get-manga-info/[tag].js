@@ -1,6 +1,6 @@
 import { getMangaInfo } from '@/lib/manganato';
 
-export default async function handler ({ query: { tag } }, res){
+export default async function handler({ query: { tag } }, res) {
 
     const response = await getMangaInfo(tag);
 
