@@ -17,6 +17,7 @@ module.exports = {
       }
     ];
   },
+  webpack5: false,
   webpack: (config, { dev, isServer }) => {
 
     if (isServer) {
