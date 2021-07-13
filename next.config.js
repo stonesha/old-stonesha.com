@@ -9,13 +9,6 @@ module.exports = {
       'avt.mkklcdnv6temp.com' // manganato manga covers
     ]
   },
-  async headers() {
-    return [
-      {
-        source: '/(.*)'
-      }
-    ];
-  },
   webpack5: false,
   webpack: (config, { dev, isServer }) => {
 
