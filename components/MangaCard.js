@@ -4,6 +4,8 @@ import { useState } from 'react';
 
 import fetcher from '@/lib/fetcher';
 
+Modal.setAppElement('body')
+
 export default function MangaCard({ tag }) {
     const [modalIsOpen, setIsOpen] = useState(false);
 
@@ -11,7 +13,8 @@ export default function MangaCard({ tag }) {
         setIsOpen(true);
     }
 
-    function closeModal() {
+    function closeModal(e) {
+        e.stopPropagation();
         setIsOpen(false);
     }
 
@@ -28,8 +31,10 @@ export default function MangaCard({ tag }) {
                 onRequestClose={closeModal}
                 shouldCloseOnOverlayClick={true}
                 contentLabel="Example Modal"
-                overlayClassName="bg-black bg-opacity-25 fixed inset-0"
+                overlayClassName="bg-white dark:bg-black bg-opacity-25 fixed inset-0 border"
+                className="bg-white dark:bg-black"
             >
+                <button onClick={closeModal}>close</button>
                 boo
             </Modal>
             <img className="w-24 h-36" src={manga.img_url} alt={manga.title} />
