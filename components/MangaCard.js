@@ -1,6 +1,7 @@
 import useSWR from 'swr';
 import Modal from 'react-modal';
 import { useState } from 'react';
+import parse from 'html-react-parser';
 
 import fetcher from '@/lib/fetcher';
 
@@ -31,13 +32,16 @@ export default function MangaCard({ tag }) {
                 onRequestClose={closeModal}
                 shouldCloseOnOverlayClick={true}
                 contentLabel="Example Modal"
-                overlayClassName="bg-white dark:bg-black bg-opacity-25 fixed inset-0 border"
-                className="bg-white dark:bg-black"
+                overlayClassName="bg-white dark:bg-black fixed inset-0 bg-opacity-75 dark:bg-opacity-75 m-auto"
+                className="bg-white dark:bg-black max-w-sm mx-auto my-64 border rounded overflow-hidden shadow-lg"
             >
-                <button onClick={closeModal}>close</button>
-                boo
+                <div className="absolute">
+                    {manga.title} <br />
+                    {parse(manga.description)} <br />
+                    {manga.updated} <br />
+                    {manga.latest_chapter} <br />
+                </div>
             </Modal>
-            <img className="w-24 h-36" src={manga.img_url} alt={manga.title} />
         </button>
     );
 }
