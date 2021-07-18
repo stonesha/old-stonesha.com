@@ -1,4 +1,4 @@
-const { spacing, fontFamily } = require('tailwindcss/defaultTheme');
+const { spacing } = require('tailwindcss/defaultTheme');
 
 module.exports = {
   mode: 'jit',
@@ -6,6 +6,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      boxShadow: {
+        white: '0 4px 14px 0 rgba(255, 255, 255, 0.1)',
+      },
       colors: {
         'blue-opaque': 'rgb(13 42 148 / 18%)'
       },

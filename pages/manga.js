@@ -32,7 +32,7 @@ export default function Manga({ mangaList }) {
                         target="_blank" rel="noopener noreferrer">here</a>. Select a manga cover to view more
                     information about it.
                 </p>
-                <div className="grid justify-items-center gap-2 grid-cols-2 sm:grid-cols-4 my-2 mt-4 w-full">
+                <div className="grid justify-items-center gap-0.25 grid-cols-2 sm:grid-cols-4 my-2 mt-4 w-full">
                     {mangaList.map((mangaTag, index) => <MangaCard key={index} tag={mangaTag} />)}
                 </div>
             </div>
