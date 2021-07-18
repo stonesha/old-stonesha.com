@@ -2,7 +2,7 @@ import useSWR from 'swr';
 import Modal from 'react-modal';
 import { useState } from 'react';
 import parse from 'html-react-parser';
-import { FaUserCircle } from "react-icons/fa";
+import { FaUserCircle, FaWindowClose } from "react-icons/fa";
 
 import fetcher from '@/lib/fetcher';
 
@@ -34,12 +34,17 @@ export default function MangaCard({ tag }) {
                 shouldCloseOnOverlayClick={true}
                 contentLabel={`${manga.title} Modal`}
                 overlayClassName="bg-white dark:bg-black fixed inset-0 bg-opacity-75 dark:bg-opacity-75 m-auto"
-                className="bg-gradient-to-r from-white to-gray-100 dark:from-gray-900 dark:to-black max-w-2xl max-h-max mx-auto my-64 rounded overflow-hidden shadow-lg dark:shadow-white"
+                className="bg-gradient-to-r from-white to-gray-100 dark:from-gray-900 dark:to-black 
+                max-w-2xl max-h-max mx-auto my-28 md:my-48 rounded overflow-hidden shadow-lg dark:shadow-white"
             >
+                <button className="float-right" onClick={closeModal}>
+                    <FaWindowClose className="text-gray-600 dark:text-gray-400 w-5 h-5 rounded mr-4 mt-4" />
+                </button>
                 <div className="flex">
                     <img className="object-cover flex-initial" src={manga.img_url} alt={manga.title} />
                     <div className="flex-initial max-w-max mx-6">
-                        <h1 className="text-2xl mt-4 mr-4 mb-2 prose flex-initial"><a href={`${manga.url}`} target="_blank" rel="noopener noreferrer">{manga.title}</a></h1>
+                        <h1 className="text-2xl mt-4 mr-4 mb-2 prose"><a href={`${manga.url}`} target="_blank" rel="noopener noreferrer">{manga.title}</a></h1>
+
                         <p className="text-gray-600 dark:text-gray-400 leading-none flex mb-2">
                             <FaUserCircle className="w-3.5 h-3.5" />
                             &nbsp;
