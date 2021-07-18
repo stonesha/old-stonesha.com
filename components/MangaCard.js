@@ -46,8 +46,8 @@ export default function MangaCard({ tag }) {
                             {manga.author}
                         </p>
                         <p className="text-gray-700 dark:text-gray-300 mb-2">{parse(manga.description)}</p>
-                        <p class="text-gray-700 dark:text-gray-400">Last Updated: {manga.updated}</p>
-                        <p class="text-gray-700 dark:text-gray-400 mb-2">Latest Chapter: {manga.latest_chapter}</p>
+                        <p className="text-gray-700 dark:text-gray-400">Last Updated: {manga.updated}</p>
+                        <p className="text-gray-700 dark:text-gray-400 mb-2">Latest Chapter: {manga.latest_chapter}</p>
                     </div>
                 </div>
             </Modal>
