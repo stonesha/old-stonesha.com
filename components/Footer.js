@@ -1,4 +1,4 @@
-  
+
 import Link from 'next/link';
 
 const ExternalLink = ({ href, children }) => (
@@ -32,7 +32,7 @@ export default function Footer() {
           </ExternalLink>
         </div>
         <div className="flex flex-col space-y-4">
-          
+
         </div>
       </div>
     </footer>
