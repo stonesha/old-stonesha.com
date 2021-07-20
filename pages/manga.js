@@ -3,7 +3,7 @@ import { getFollowedMangas } from "@/lib/manganato";
 import MangaCard from "@/components/MangaCard";
 
 export async function getStaticProps() {
-    const mangaList = getFollowedMangas();
+    const mangaList = await getFollowedMangas();
 
     return {
         props: {
@@ -35,7 +35,7 @@ export default function Manga({ mangaList }) {
                     information about it.
                 </p>
                 <div className="grid justify-items-center gap-0.25 grid-cols-2 sm:grid-cols-4 my-2 mt-4 w-full">
-                    {mangaList.map((mangaTag, index) => <MangaCard key={index} tag={mangaTag} />)}
+                    {mangaList.map((manga, index) => <MangaCard key={index} manga={manga} />)}
                 </div>
             </div>
         </Container>

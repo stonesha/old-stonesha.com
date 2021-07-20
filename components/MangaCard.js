@@ -1,14 +1,11 @@
-import useSWR from 'swr';
 import Modal from 'react-modal';
 import { useState } from 'react';
 import parse from 'html-react-parser';
 import { FaUserCircle, FaWindowClose } from "react-icons/fa";
 
-import fetcher from '@/lib/fetcher';
-
 Modal.setAppElement('body')
 
-export default function MangaCard({ tag }) {
+export default function MangaCard({ manga }) {
     const [modalIsOpen, setIsOpen] = useState(false);
 
     function openModal() {
@@ -19,8 +16,6 @@ export default function MangaCard({ tag }) {
         e.stopPropagation();
         setIsOpen(false);
     }
-
-    const { data: manga } = useSWR(`/api/get-manga-info/${tag}`, fetcher);
 
     if (!manga)
         return null;

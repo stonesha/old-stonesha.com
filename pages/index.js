@@ -17,9 +17,9 @@ export default function Home() {
           <a href={"https://github.com/stonesha"} target="_blank" rel="noopener noreferrer">check my GitHub</a>, or stay and browse.
         </h2>
 
-        <h1 className="font-medium text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
+        <h2 className="font-medium text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
           Projects
-        </h1>
+        </h2>
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full mt-4">
 
           <ProjectCard
@@ -78,9 +78,9 @@ export default function Home() {
         </div>
         <br />
 
-        <h1 className="font-medium text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
+        <h2 className="font-medium text-2xl md:text-4xl tracking-tight mb-4 text-black dark:text-white">
           Top Tracks
-        </h1>
+        </h2>
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
           <TopTracks />
         </div>
