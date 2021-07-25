@@ -6,7 +6,7 @@ export default async function handler({ query: { page } }, res) {
         order: "RANDOM",
         size: "thumb",
         page: page,
-        limit: 15,
+        limit: 100,
     };
 
 
