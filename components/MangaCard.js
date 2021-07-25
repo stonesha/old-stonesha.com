@@ -2,6 +2,7 @@ import Modal from 'react-modal';
 import { useState } from 'react';
 import parse from 'html-react-parser';
 import { FaUserCircle, FaWindowClose } from "react-icons/fa";
+import Image from 'next/image';
 
 Modal.setAppElement('body')
 
@@ -53,7 +54,16 @@ export default function MangaCard({ manga }) {
                     </div>
                 </div>
             </Modal>
-            <img className="w-24 h-36 rounded" src={manga.img_url} alt={manga.title} />
+            <div className="w-24 h-36 relative">
+                <Image
+                    alt={manga.title}
+                    src={manga.img_url}
+                    sizes="100%"
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded"
+                />
+            </div>
         </button>
     );
 }
