@@ -16,9 +16,6 @@ export default function CatPics() {
         swr={swr}
         loadingIndicator='Loading cat pics~'
         endingIndicator="No more cat pics :("
-        isReachingEnd={(swr) =>
-            swr.data?.[0]?.length === 0 || swr.data?.[swr.data?.length - 1]?.length
-        }
     >
         {(response) =>
             response?.map(cat => (
