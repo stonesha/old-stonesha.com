@@ -32,6 +32,8 @@ export default function CatPics() {
                         width={cat.width}
                         src={cat.url}
                         className="rounded"
+                        placeholder='blur'
+                        blurDataURL='iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPkNjevBwAByAD65xmqMAAAAABJRU5ErkJggg=='
                     />
                 </div>
             ))}
