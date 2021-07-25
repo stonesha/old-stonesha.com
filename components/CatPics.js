@@ -24,8 +24,8 @@ export default function CatPics() {
     >
         {(response) =>
             response?.map(cat => (
-                <div class="w-full p-2 rounded lg:w-1/3">
-                    <img src={cat.url} key={cat.id} alt={`cat-pic-${cat.id}`} />
+                <div className="w-full p-2 rounded lg:w-1/3" key={cat.id}>
+                    <img src={cat.url} alt={`cat-pic-${cat.id}`} />
                 </div>
             ))}
     </InfiniteScroll>
