@@ -5,7 +5,7 @@ import InfiniteScroll from 'react-swr-infinite-scroll';
 import fetcher from '@/lib/fetcher';
 
 // set a hard limit to avoid making too many API requests
-const PAGE_SIZE = 5;
+const PAGE_SIZE = 20;
 
 export default function CatPics() {
 
