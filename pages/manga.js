@@ -2,7 +2,7 @@ import Container from "@/components/Container";
 import { getFollowedMangas } from "@/lib/manganato";
 import MangaCard from "@/components/MangaCard";
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const mangaList = await getFollowedMangas();
 
     return {
