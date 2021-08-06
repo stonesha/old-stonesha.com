@@ -14,8 +14,9 @@ export default function Cats() {
                 </h1>
                 <p className="prose text-gray-600 dark:text-gray-400 mb-4">
                     An image scroller that auto populates with cat images. This page leverages useSWRInfinite() to get
-                    the images from <a href={"https://thecatapi.com/"} target="_blank" rel="noopener noreferrer">The Cat API.</a> If
-                    it says there are no more cat pics that means I've hit my free API limit or the API is down so you'll have to come back later.
+                    the images from <a href={"https://thecatapi.com/"} target="_blank" rel="noopener noreferrer">The Cat API</a> and random cat subreddits from Reddit.
+                    If there are no cat pics showing then I've hit my free API limit or the random subreddit I've tried fetching from is not working for some reason
+                    so feel free to refresh.
                 </p>
                 <div className="my-2 container flex flex-wrap mx-auto">
                     <CatPics />

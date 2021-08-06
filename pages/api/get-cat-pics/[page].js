@@ -1,4 +1,4 @@
-import { getCatImages } from '@/lib/cat_api';
+import { getCatImages, getSubredditCatImages } from '@/lib/cat_api';
 
 export default async function handler({ query: { page } }, res) {
 
@@ -6,16 +6,19 @@ export default async function handler({ query: { page } }, res) {
         order: "RANDOM",
         size: "thumb",
         page: page,
-        limit: 100,
+        limit: 25,
     };
 
 
-    const response = await getCatImages({ options });
+    const cat_api_response = await getCatImages({ options });
+    const subreddit_response = await getSubredditCatImages();
+    // combine both image responses and shuffle in an array
+    const all_cat_images = [...subreddit_response, ...cat_api_response].sort(() => 0.5 - Math.random());
 
     res.setHeader(
         'Cache-Control',
         'public, s-maxage=86400, stale-while-revalidate=43200'
     );
 
-    return res.status(200).json(response);
+    return res.status(200).json(all_cat_images);
 };

@@ -7,7 +7,9 @@ module.exports = {
     domains: [
       'i.scdn.co', // Spotify Album Art
       'avt.mkklcdnv6temp.com', // manganato manga covers
-      'cdn2.thecatapi.com' // cat api pictures
+      'cdn2.thecatapi.com', // cat api pictures
+      'i.redd.it', // reddit cat images
+      'i.imgur.com', // imgur cat images
     ]
   },
   webpack5: false,
