@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function Track(track) {
   return (
     <div className="flex flex-row max-w-3xl w-full mt-8">
@@ -8,7 +6,7 @@ export default function Track(track) {
         rel="noopener noreferrer"
       >
         <div className="w-32 h-32 relative">
-          <Image
+          <img
             alt={track.title}
             src={track.albumImageUrl}
             sizes="100%"

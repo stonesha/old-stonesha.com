@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function ProjectCard({
   title,
   description,
@@ -12,7 +10,7 @@ export default function ProjectCard({
       className="transition-height ease-in-out hover:-translate-y-1 hover:scale-105 border border-grey-400 dark:border-gray-900 rounded p-4 w-full" href={`${link}`} target="_blank" rel="noopener noreferrer"
       {...rest}
     >
-      <Image
+      <img
         alt={title}
         height={32}
         width={32}
