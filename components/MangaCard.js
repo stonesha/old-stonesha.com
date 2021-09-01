@@ -59,7 +59,7 @@ export default function MangaCard({ manga }) {
                     src={manga.img_url}
                     sizes="100%"
                     layout="fill"
-                    objectFit="cover"
+                    objectfit="cover"
                     className="rounded"
                 />
             </div>
