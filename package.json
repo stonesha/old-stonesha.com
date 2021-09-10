@@ -12,7 +12,7 @@
     "@tailwindcss/typography": "^0.4.1",
     "globby": "^11.0.4",
     "html-react-parser": "^1.2.7",
-    "next": "latest",
+    "next": "^11.1.2",
     "next-themes": "0.0.14",
     "node-html-parser": "^3.3.6",
     "preact": "^10.5.14",
@@ -23,7 +23,8 @@
     "react-icons": "^4.2.0",
     "react-modal": "^3.14.3",
     "react-swr-infinite-scroll": "^1.0.1",
-    "swr": "^0.5.6"
+    "swr": "^0.5.6",
+    "tailwind-scrollbar-hide": "^1.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
