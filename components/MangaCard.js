@@ -7,6 +7,7 @@ Modal.setAppElement('body')
 
 export default function MangaCard({ manga }) {
     const [modalIsOpen, setIsOpen] = useState(false);
+    const [titleShown, setTitleShown] = useState(true);
 
     function openModal() {
         setIsOpen(true);
@@ -22,7 +23,8 @@ export default function MangaCard({ manga }) {
 
     return (
 
-        <button className="transition-height ease-in-out hover:-translate-y-1 hover:scale-105 p-4 col-auto" onClick={openModal}>
+        <button className="manga transition-height ease-in-out hover:-translate-y-1 hover:scale-105 p-4 col-auto" onClick={openModal}
+            onMouseEnter={() => setTitleShown(false)} onMouseLeave={() => setTitleShown(true)}>
             <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
@@ -53,15 +55,16 @@ export default function MangaCard({ manga }) {
                     </div>
                 </div>
             </Modal>
-            <div className="w-24 h-36 relative">
-                <img
-                    alt={manga.title}
-                    src={manga.img_url}
-                    sizes="100%"
-                    layout="fill"
-                    objectfit="cover"
-                    className="rounded"
-                />
+            <div className="w-24 h-36 relative rounded-sm" style={{ "backgroundImage": `url(${manga.img_url})`, "backgroundSize": "cover" }}>
+                {
+                    titleShown &&
+                    (
+                        <div className="title flex justify-center bg-white rounded-sm backdrop-filter backdrop-blur-sm bg-opacity-25 
+                            text-center p-2 mt-2 w-24 h-36 overflow-auto scrollbar-hide">
+                            <span className="text-white text-sm font-semibold break-words overflow-ellipsis">{manga.title}</span>
+                        </div>
+                    )
+                }
             </div>
         </button>
     );
