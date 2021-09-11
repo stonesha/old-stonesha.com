@@ -59,7 +59,7 @@ export default function MangaCard({ manga }) {
                 {
                     titleShown &&
                     (
-                        <div className="title flex justify-center bg-white rounded-sm backdrop-filter backdrop-blur-sm bg-opacity-25 
+                        <div className="title flex justify-center bg-black backdrop-filter backdrop-blur-sm bg-opacity-25 
                             text-center p-2 mt-2 w-24 h-36 overflow-auto scrollbar-hide">
                             <span className="text-white text-sm font-semibold break-words overflow-ellipsis">{manga.title}</span>
                         </div>
