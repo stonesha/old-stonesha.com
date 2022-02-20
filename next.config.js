@@ -3,21 +3,7 @@ module.exports = {
     strictPostcssConfiguration: true
   },
   reactStrictMode: true,
-  images: {
-    domains: [
-      'i.scdn.co', // Spotify Album Art
-      'avt.mkklcdnv6temp.com', // manganato manga covers
-      'cdn2.thecatapi.com', // cat api pictures
-      'i.redd.it', // reddit cat images
-      'i.imgur.com', // imgur cat images
-    ]
-  },
-  webpack5: false,
   webpack: (config, { dev, isServer }) => {
-
-    if (isServer) {
-      require('./scripts/generate-sitemap');
-    }
 
     // Replace React with Preact only in client production build
     if (!dev && !isServer) {
