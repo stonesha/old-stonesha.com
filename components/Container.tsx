@@ -6,18 +6,13 @@ const Container = (props) => {
 
     return (
         <div>
-            <Head>
-                <title>Stone Sha</title>
-                
-            </Head>
-            <nav>
-
-            </nav>
-
-            <main className='mx-auto w-4/6'>
-                {children}
-            </main>
-
+          <Head>
+            <title>Stone Sha</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          </Head>
+          <main className='mx-auto w-4/6'>
+              {children}
+          </main>
         </div>
     );
 }
