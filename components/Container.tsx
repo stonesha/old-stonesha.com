@@ -10,7 +10,7 @@ const Container = (props) => {
             <title>Stone Sha</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           </Head>
-          <main className='mx-auto w-4/6'>
+          <main>
               {children}
           </main>
         </div>
