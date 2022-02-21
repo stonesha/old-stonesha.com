@@ -8,6 +8,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.19",
     "next": "^12.1.0",
     "preact": "^10.6.6",
     "react": "^17.0.2",
